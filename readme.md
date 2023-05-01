@@ -11,4 +11,4 @@
 - React project created with vite
 - Style obtained with TailwindCSS
 - Logo and Favicon made with https://logo.com/ and https://realfavicongenerator.net/
-
+- 3D rose: https://sketchfab.com/3d-models/anatomy-of-a-miniature-rose-photogrammetry-e740eaaf387f4edd806b2d33af554500

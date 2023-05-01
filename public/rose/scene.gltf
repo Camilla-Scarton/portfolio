@@ -1,0 +1,226 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 13369,
+      "max": [
+        8.78352165222168,
+        11.165399551391602,
+        18.73157501220703
+      ],
+      "min": [
+        -18.201257705688477,
+        -9.396956443786621,
+        0.03333652392029762
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 160428,
+      "componentType": 5126,
+      "count": 13369,
+      "max": [
+        0.9998465776443481,
+        0.9989632368087769,
+        0.9999076128005981
+      ],
+      "min": [
+        -0.9999696612358093,
+        -0.9999734163284302,
+        -0.9999340772628784
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 13369,
+      "max": [
+        0.9995063543319702,
+        0.9995115995407104
+      ],
+      "min": [
+        0.00048828125,
+        0.0004907442489638925
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 35694,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Raiz (https://sketchfab.com/RaizVR)",
+      "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+      "source": "https://sketchfab.com/3d-models/anatomy-of-a-miniature-rose-photogrammetry-e740eaaf387f4edd806b2d33af554500",
+      "title": "Anatomy of a miniature rose - Photogrammetry"
+    },
+    "generator": "Sketchfab-12.66.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 142776,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 106952,
+      "byteOffset": 142776,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 320856,
+      "byteOffset": 249728,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 570584,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_unlit"
+  ],
+  "images": [
+    {
+      "uri": "textures/Rosa12K_u0_v0_baseColor.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_unlit": {}
+      },
+      "name": "Rosa12K_u0_v0",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Rosa12K_Rosa12K_u0_v0_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        0.07623083069357506,
+        0.015122947275765238,
+        0.016810419245930856,
+        0.0,
+        -0.020077010123268124,
+        0.018074105845079718,
+        0.07478418003809395,
+        0.0,
+        0.010402277937810567,
+        -0.07594113562963756,
+        0.02114638183290472,
+        0.0,
+        0.8097695112228394,
+        -17.246734619140625,
+        5.20656585693359,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Rosa12K.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "Rosa12K"
+    },
+    {
+      "mesh": 0,
+      "name": "Rosa12K_Rosa12K_u0_v0_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ]
+}
