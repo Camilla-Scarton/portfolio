@@ -4,7 +4,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Rose = () => {
+const Rose = ({ isMobile }) => {
   const rose = useGLTF("./rose/scene.gltf");
   return (
     <mesh>
@@ -19,12 +19,30 @@ const Rose = () => {
         castShadow
         shadow-mapSize={1024}
       />
-      <primitive object={rose.scene} scale={1.15} position={[-0.3, 18.8, -3]} />
+      <primitive 
+        object={rose.scene}
+        scale={1.15}
+        position={[isMobile ? 0 : -0.1, 18.75, -3]}
+      />
     </mesh>
   );
 };
 
 const RoseCanvas = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 640px)");    
+    setIsMobile(mediaQuery.matches);
+
+    const handleMediaQueryChange = (evt) => setIsMobile(evt.matches);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    }
+  }, [])
+
   return (
     <Canvas
       frameloop="demand"
@@ -33,15 +51,16 @@ const RoseCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <Rose />
+        <OrbitControls
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={isMobile ? Math.PI / 2 - 0.3 : Math.PI / 2 - 0.4}
+          minAzimuthAngle={isMobile ? Math.PI * 2 : Math.PI * 2 - 0.7}
+          maxAzimuthAngle={isMobile ? Math.PI * 2 + 0.5 : Math.PI * 2 + 0.7}
+          enableZoom={false}
+        />
+        <Rose isMobile={isMobile}/>
       </Suspense>
-      <OrbitControls
-        maxPolarAngle={Math.PI / 2}
-        minPolarAngle={Math.PI / 2 - 0.4}
-        minAzimuthAngle={Math.PI * 2 - 0.7}
-        maxAzimuthAngle={Math.PI * 2 + 0.7}
-        enableZoom={false}
-      />
+      
       <Preload all />
     </Canvas>
   );
