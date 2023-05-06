@@ -18,11 +18,36 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (evt) => {
-
+    const { name, value } = evt.target;
+    setForm({ ...form, [name]: value });
   }
 
   const handleSubmit = (evt) => {
+    evt.preventDefault();
+    setLoading(true);
 
+    // serviceID, templateID, publicKey da sostituire con info prese dopo aver creato l'account su emailjs.com
+    emailjs.send("serviceID", "templateID", { 
+      from_name: form.name, 
+      from_email: form.email,
+      to_name: "Camilla",
+      to_email: "camy.s96@gmail.com",
+      message: form.message,
+    }, "publicKey")
+    .then(() => {
+      setLoading(false);
+      alert("Thank you! I'll get back to you as soon as possible.");
+
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      })
+    }, (err) => {
+      setLoading(false);
+      console.log(err);
+      alert("Something went wrong!");
+    })
   }
 
   return (
