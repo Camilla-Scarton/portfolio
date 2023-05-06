@@ -38,7 +38,7 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
       <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[17px] mx-w-3xl leading-[30px]">
-          I'm a junior web developer with experience in JavaScript (300+ exercises done at Codewars) and expertise in React (6 months of full immersion in Develhope). I love Tailwind CSS for styling. This portfolio in meant to be a nice view of my projects present in my GitHub profile. I love creating projects related to my hobbies and my passions. I believe in <q>learning by doing</q> so... it's what I'm actually doing!
+          I'm a junior web developer with experience in JavaScript (300+ exercises done at Codewars) and expertise in React (6 months of full immersion in Develhope). I love Tailwind CSS for styling. This portfolio in meant to be a nice view of my GitHub projects and my job experiences so far.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, i) => <ServiceCard key={service.title} index={i} {...service} />)}
