@@ -28,7 +28,7 @@ const Navbar = () => {
             <span className="sm:block hidden">Scarton</span>
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-7">
           {navLinks.map(link => (
             <li
               key={link.id}
