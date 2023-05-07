@@ -192,7 +192,7 @@ const projects = [
           color: "text-pink-400",
         },
         {
-          name: "js",
+          name: "javascript",
           color: "text-green-400",
         },
         {
@@ -226,7 +226,7 @@ const projects = [
           color: "text-yellow-300",
         },
         {
-          name: "js",
+          name: "javascript",
           color: "text-green-400",
         },
       ],
@@ -248,7 +248,7 @@ const projects = [
           color: "text-yellow-300",
         },
         {
-          name: "js",
+          name: "javascript",
           color: "text-green-400",
         },
         {
@@ -278,7 +278,7 @@ const projects = [
           color: "text-yellow-300",
         },
         {
-          name: "js",
+          name: "javascript",
           color: "text-green-400",
         },
         {
@@ -312,7 +312,7 @@ const projects = [
         color: "text-yellow-300",
       },
       {
-        name: "js",
+        name: "javascript",
         color: "text-green-400",
       },
     ],
@@ -334,7 +334,7 @@ const projects = [
         color: "text-yellow-300",
       },
       {
-        name: "js",
+        name: "javascript",
         color: "text-green-400",
       },
       {
@@ -364,7 +364,7 @@ const projects = [
         color: "text-yellow-300",
       },
       {
-        name: "js",
+        name: "javascript",
         color: "text-green-400",
       },
     ],
@@ -386,7 +386,7 @@ const projects = [
           color: "text-yellow-300",
         },
         {
-          name: "js",
+          name: "javascript",
           color: "text-green-400",
         },
         {
