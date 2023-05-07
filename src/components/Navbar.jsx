@@ -23,9 +23,9 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+          <p className="text-white text-[22px] font-bold cursor-pointer flex">
             Camilla &nbsp;
-            <span className="sm:block hidden">Scarton</span>
+            <span className="lg:block hidden">Scarton</span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-7">
@@ -34,7 +34,7 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[22px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
@@ -50,7 +50,7 @@ const Navbar = () => {
                   key={link.id}
                   className={`${
                     active === link.title ? "text-white" : "text-secondary"
-                  } font-poppins text-[16px] font-medium cursor-pointer`}
+                  } hover:text-white font-poppins text-[22px] font-medium cursor-pointer`}
                   onClick={() => {
                     setActive(link.title);
                     setMenuIsOpen(!menuIsOpen);

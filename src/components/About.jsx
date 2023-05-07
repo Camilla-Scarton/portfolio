@@ -37,10 +37,10 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
-      <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[17px] mx-w-3xl leading-[30px]">
+      <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary sm:text-[24px] text-[18px] mx-w-3xl leading-[30px] cursor-default">
           I'm a junior web developer with experience in JavaScript (300+ exercises done at Codewars) and expertise in React (6 months of full immersion in Develhope). I love Tailwind CSS for styling. This portfolio in meant to be a nice view of my GitHub projects and my job experiences so far.
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap justify-center gap-10">
         {services.map((service, i) => <ServiceCard key={service.title} index={i} {...service} />)}
       </div>
     </>

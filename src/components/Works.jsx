@@ -38,13 +38,13 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             </div>
           </div>
         </div>
-        <div className="mt-5">
+        <div className="mt-5 cursor-default">
           <h3 className="text-white font-bolde text-[24px]">{name}</h3>
           <p className="text-secondary text-[14px] mt-2">{description}</p>
         </div>
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap gap-2 cursor-default">
           {tags.map(tag => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+            <p key={tag.name} className={`text-[14px] border border-white rounded-full px-2 py-0.5 ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
@@ -64,10 +64,10 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-sec
-           text-[17px] mx-w-3xl leading-[30px]"
+          className="mt-3 text-secondary
+           sm:text-[24px] text-[18px] mx-w-3xl leading-[30px] cursor-default"
         >
-          Following projects showcase my skills and experience trought real-world examples of my work. Each project is briefly described and linked to the GitHub repository and the live version. <br /> In this section there are all kind of projects: finished ones, ongoing ones... and future ones too! <br /> I love creating projects related to my hobbies and my passions. I believe in <q>learning by doing</q> so... it's what I'm actually doing! 
+          Following projects showcase my skills and experience trought real-world examples of my work. Each project is briefly described and linked to the GitHub repository and the live version. <br /> In this section there are all kind of projects: finished ones and ongoing ones! <br /> I love creating projects related to my hobbies and my passions. I believe in <q>learning by doing</q> so... it's what I'm actually doing! 
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
