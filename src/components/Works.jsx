@@ -7,7 +7,7 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link } ) => {
+const ProjectCard = ({ index, info, name, description, tags, image, source_code_link } ) => {
   return (
     <motion.div
       variants={fadeIn("up", "spring", index*0.5, 0.75)}
@@ -20,7 +20,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[120px]">
           <img 
             src={image}
             alt={name}
@@ -38,14 +38,21 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             </div>
           </div>
         </div>
+        <div className="mt-4 flex flex-wrap gap-4 cursor-default">
+          {info.map((info, i) => (
+            <p key={i} className={`text-[16px] text-white`}>
+              #{info}
+            </p>
+          ))}
+        </div>
         <div className="mt-5 cursor-default">
           <h3 className="text-white font-bolde text-[24px]">{name}</h3>
-          <p className="text-secondary text-[14px] mt-2">{description}</p>
+          <p className="text-secondary text-[18px] mt-2">{description}</p>
         </div>
-        <div className="mt-4 flex flex-wrap gap-2 cursor-default">
+        <div className="mt-4 flex flex-wrap gap-4 cursor-default">
           {tags.map(tag => (
-            <p key={tag.name} className={`text-[14px] border border-white rounded-full px-2 py-0.5 ${tag.color}`}>
-              #{tag.name}
+            <p key={tag.name} className={`text-[16px] border border-white rounded-lg px-2 py-0.5 ${tag.color}`}>
+              {tag.name}
             </p>
           ))}
         </div>
@@ -70,7 +77,7 @@ const Works = () => {
           Following projects showcase my skills and experience trought real-world examples of my work. Each project is briefly described and linked to the GitHub repository and the live version. <br /> In this section there are all kind of projects: finished ones and ongoing ones! <br /> I love creating projects related to my hobbies and my passions. I believe in <q>learning by doing</q> so... it's what I'm actually doing! 
         </motion.p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap gap-7 justify-center">
         {projects.map((project, i) => <ProjectCard key={`project-${i}`} index={i} {...project} />)}
       </div>
     </>
