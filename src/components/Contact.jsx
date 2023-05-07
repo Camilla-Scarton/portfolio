@@ -19,7 +19,7 @@ const Contact = () => {
 
   const handleChange = (evt) => {
     const { name, value } = evt.target;
-    setForm({ ...form, [name]: value });
+    setForm(form => ({ ...form, [name]: value }));
   }
 
   const handleSubmit = (evt) => {
@@ -51,7 +51,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col flex gap-10 overflow-hidden">
+    <div className="xl:mt-12 xl:flex-row flex-col flex gap-10 overflow-hidden inset-1">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -63,12 +63,13 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className="m-12 flex flex-col gap-8"
         >
-          <label className="flex flex-col">
+          <label htmlFor="name" className="flex flex-col">
             <span className="text-white font-medium mb-4">
               Your name
             </span>
             <input
               type="text"
+              id="name"
               name="name"
               value={form.name}
               onChange={handleChange}
@@ -76,26 +77,28 @@ const Contact = () => {
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
-          <label className="flex flex-col">
+          <label htmlFor="email" className="flex flex-col">
             <span className="text-white font-medium mb-4">
               Your email
             </span>
             <input
               type="email"
               name="email"
+              id="email"
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
-          <label className="flex flex-col">
+          <label htmlFor="message" className="flex flex-col">
             <span className="text-white font-medium mb-4">
               Your message
             </span>
             <textarea
-              rows="7"
+              rows="4"
               name="message"
+              id="message"
               value={form.message}
               onChange={handleChange}
               placeholder="Write me a message!"
