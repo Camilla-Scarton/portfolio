@@ -2,10 +2,12 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+
+import { faLaptopCode, faLaptop } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectCard = ({
   index,
@@ -50,8 +52,16 @@ const ProjectCard = ({
           ))}
         </div>
         <div className="mt-4 flex flex-row justify-evenly items-center w-full">
-          <div>link github</div>
-          <div>link live</div>
+          {source_code_link && (
+            <a href={source_code_link}>
+              <FontAwesomeIcon icon={faLaptopCode} size="xl" />
+            </a>
+          )}
+          {site_link && (
+            <a href={site_link}>
+              <FontAwesomeIcon icon={faLaptop} size="xl" />
+            </a>
+          )}
         </div>
       </Tilt>
     </motion.div>
@@ -73,7 +83,8 @@ const Works = () => {
         Following projects showcase my skills and experience trought real-world
         examples of my work. Each project is briefly described and linked to the
         GitHub repository and the live version. <br /> I love creating projects
-        related to my hobbies and my passions. I believe in <q>learning by doing</q> so... it's what I'm actually doing!
+        related to my hobbies and my passions. I believe in{" "}
+        <q>learning by doing</q> so... it's what I'm actually doing!
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-7 justify-center">
         {projects.map((project, i) => (

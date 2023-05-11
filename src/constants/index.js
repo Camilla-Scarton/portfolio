@@ -39,10 +39,11 @@ const labels = [
 
 const experiences = [
   {
+    type: "study",
     title: "Maturità classica",
     company_name: "Dal Piaz High School",
     icon: starbucks,
-    iconBg: "indigo",
+    iconBg: "blue",
     date: "2010 - 2015",
     points: [
       "Winning of Latin Certamen competition between all students of the same year.",
@@ -51,20 +52,22 @@ const experiences = [
     ],
   },
   {
+    type: "study",
     title: "Maths courses attendance",
     company_name: "Trento University",
     icon: starbucks,
-    iconBg: "indigo",
+    iconBg: "blue",
     date: "2015 - 2020",
     points: [
       "Passed multiples exams including mathematical analysis, algebra and biology.",
     ],
   },
   {
+    type: "job",
     title: "Homeworks helper and babysitter",
     company_name: "Lentiai, Feltre and Trento cities",
     icon: starbucks,
-    iconBg: "indigo",
+    iconBg: "brown",
     date: "2014 - 2021",
     points: [
       "Helped young students from 11 to 16 years old to study maths and latin.",
@@ -72,10 +75,11 @@ const experiences = [
     ],
   },
   {
+    type: "job",
     title: '"S.O.Scienze" Project',
     company_name: "Sophie Scholl High School",
     icon: starbucks,
-    iconBg: "indigo",
+    iconBg: "brown",
     date: "Dec 2021 - May 2022",
     points: [
       "Activities in 7+ class and in the school library to support students in the maths study.",
@@ -87,10 +91,11 @@ const experiences = [
     ],
   },
   {
+    type: "study",
     title: "Full-Stack Web Course",
     company_name: "Develhope",
     icon: starbucks,
-    iconBg: "indigo",
+    iconBg: "blue",
     date: "Sept 2022 - March 2023",
     points: [
       "Full immersion in HTML, CSS, JavaScript, SASS, TypeScript, React and Node.js.",
@@ -138,7 +143,7 @@ const projects = [
         },
       ],
     image: tripguide,
-    source_code_link: "",
+    source_code_link: "https://github.com/Camilla-Scarton/Esercizi-Develhope",
     site_link: "",
   },
   {
@@ -161,7 +166,7 @@ const projects = [
         },
       ],
     image: tripguide,
-    source_code_link: "",
+    source_code_link: "https://github.com/Camilla-Scarton/Netflix-Project-Develhope",
     site_link: "",
   },
   {
@@ -192,7 +197,7 @@ const projects = [
         },
       ],
     image: tripguide,
-    source_code_link: "",
+    source_code_link: "https://github.com/Camilla-Scarton/Lego-Project-Develhope",
     site_link: "",
   },
   {
@@ -227,7 +232,7 @@ const projects = [
         },
       ],
     image: tripguide,
-    source_code_link: "",
+    source_code_link: "https://github.com/Camilla-Scarton/Evolve-Project-Develhope",
     site_link: "",
   },
   {
@@ -250,8 +255,8 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "",
-    site_link: "",
+    source_code_link: "https://github.com/Camilla-Scarton/mato",
+    site_link: "https://camilla-scarton.github.io/mato/",
   },
   {
     info: ["colors-serie", "green", "ongoing"],
@@ -281,7 +286,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "",
+    source_code_link: "https://github.com/Camilla-Scarton/Todo-app-green",
     site_link: "",
   },
   {
@@ -304,8 +309,8 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "",
-    site_link: "",
+    source_code_link: "https://github.com/Camilla-Scarton/tic-tac-toe",
+    site_link: "https://camilla-scarton.github.io/tic-tac-toe/",
   },
   {
     info: ["personal", "ongoing"],

@@ -5,7 +5,10 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faScrewdriverWrench,
+} from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
@@ -22,9 +25,7 @@ const Contact = () => {
       >
         <a href="https://github.com/Camilla-Scarton">
           <FontAwesomeIcon icon={faGithub} size="2xl" />
-          <span className="px-3">
-          Github
-          </span>
+          <span className="px-3">Github</span>
         </a>
         <a href="https://www.linkedin.com/in/camilla-scarton/">
           <FontAwesomeIcon icon={faLinkedin} size="2xl" />
