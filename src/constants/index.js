@@ -1,28 +1,6 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
   starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
   tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks = [
@@ -61,39 +39,64 @@ const labels = [
 
 const experiences = [
   {
-    title: "Title",
-    company_name: "Where",
+    title: "Maturità classica",
+    company_name: "Dal Piaz High School",
     icon: starbucks,
     iconBg: "indigo",
-    date: "from - to",
+    date: "2010 - 2015",
     points: [
-      "example1",
-      "example2",
-      "example3"
+      "Winning of Latin Certamen competition between all students of the same year.",
+      "Cultural Exchange in Hungary with Kiskunfélegyházi Móra Ferenc Gimnázium.",
+      "English Summer School at Brighton Language College in the United Kindom.",
     ],
   },
   {
-    title: "Title",
-    company_name: "Where",
+    title: "Maths courses attendance",
+    company_name: "Trento University",
     icon: starbucks,
     iconBg: "indigo",
-    date: "from - to",
+    date: "2015 - 2020",
     points: [
-      "example1",
-      "example2",
-      "example3"
+      "Passed multiples exams including mathematical analysis, algebra and biology.",
     ],
   },
   {
-    title: "Title",
-    company_name: "Where",
+    title: "Homeworks helper and babysitter",
+    company_name: "Lentiai, Feltre and Trento cities",
     icon: starbucks,
     iconBg: "indigo",
-    date: "from - to",
+    date: "2014 - 2021",
     points: [
-      "example1",
-      "example2",
-      "example3"
+      "Helped young students from 11 to 16 years old to study maths and latin.",
+      "Remote lessons with Google Meet calls during Covid-19.",
+    ],
+  },
+  {
+    title: '"S.O.Scienze" Project',
+    company_name: "Sophie Scholl High School",
+    icon: starbucks,
+    iconBg: "indigo",
+    date: "Dec 2021 - May 2022",
+    points: [
+      "Activities in 7+ class and in the school library to support students in the maths study.",
+      "Editing of a physic experiment video with OpenShot.",
+      "Creation of two quizzes with Kahoot.it.",
+      "Development of a web application with Code.org.",
+      "Creation of a slide show presentation for 4+ hours of lesson.",
+      "Certification of skills with the Franco Demarchi fondation."
+    ],
+  },
+  {
+    title: "Full-Stack Web Course",
+    company_name: "Develhope",
+    icon: starbucks,
+    iconBg: "indigo",
+    date: "Sept 2022 - March 2023",
+    points: [
+      "Full immersion in HTML, CSS, JavaScript, SASS, TypeScript, React and Node.js.",
+      "170+ exercises done and 40+ hours of live coding.",
+      "Pratical experience in team work, in the development of 3 projects with the Agile methodology.",
+      "Reproduction of the Netflix landing page. Reproduction of two pages of the Lego site. Ideation and creation of Evolve, a web application for the fitness lovers."
     ],
   },
 ];
