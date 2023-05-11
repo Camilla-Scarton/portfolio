@@ -34,7 +34,7 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[22px] font-medium cursor-pointer`}
+              } hover:text-white text-[22px] font-bold cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
@@ -50,7 +50,7 @@ const Navbar = () => {
                   key={link.id}
                   className={`${
                     active === link.title ? "text-white" : "text-secondary"
-                  } hover:text-white font-poppins text-[22px] font-medium cursor-pointer`}
+                  } hover:text-white font-bold text-[22px] cursor-pointer`}
                   onClick={() => {
                     setActive(link.title);
                     setMenuIsOpen(!menuIsOpen);

@@ -46,7 +46,7 @@ const experiences = [
     iconBg: "blue",
     date: "2010 - 2015",
     points: [
-      "Winning of Latin Certamen competition between all students of the same year.",
+      "Winner of the Latin Certamen competition between all students of the same year.",
       "Cultural Exchange in Hungary with Kiskunfélegyházi Móra Ferenc Gimnázium.",
       "English Summer School at Brighton Language College in the United Kindom.",
     ],
