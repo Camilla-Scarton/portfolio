@@ -139,6 +139,7 @@ const projects = [
       ],
     image: tripguide,
     source_code_link: "",
+    site_link: "",
   },
   {
     info: ["develhope", "develhope-trilogy"],
@@ -161,6 +162,7 @@ const projects = [
       ],
     image: tripguide,
     source_code_link: "",
+    site_link: "",
   },
   {
     info: ["develhope", "develhope-trilogy"],
@@ -191,6 +193,7 @@ const projects = [
       ],
     image: tripguide,
     source_code_link: "",
+    site_link: "",
   },
   {
     info: ["develhope", "develhope-trilogy"],
@@ -225,6 +228,7 @@ const projects = [
       ],
     image: tripguide,
     source_code_link: "",
+    site_link: "",
   },
   {
     info: ["personal", "ongoing"],
@@ -247,6 +251,7 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "",
+    site_link: "",
   },
   {
     info: ["colors-serie", "green", "ongoing"],
@@ -277,6 +282,7 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "",
+    site_link: "",
   },
   {
     info: ["game-serie"],
@@ -299,6 +305,7 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "",
+    site_link: "",
   },
   {
     info: ["personal", "ongoing"],
@@ -329,6 +336,7 @@ const projects = [
       ],
     image: tripguide,
     source_code_link: "",
+    site_link: "",
   },
 ];
 

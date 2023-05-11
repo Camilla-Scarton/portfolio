@@ -15,9 +15,10 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  site_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index*0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 8,
@@ -27,29 +28,14 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl xs:w-[340px]"
       >
-        <div className="relative w-full h-[120px]">
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full object-cover rounded-2xl"
-          />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img src={github} className="w-1/2 h-1/2 object-contain" />
-            </div>
-          </div>
-        </div>
-        <div className="mt-4 flex flex-wrap gap-4 cursor-default">
+        <div className="flex flex-wrap gap-4 cursor-default">
           {info.map((info, i) => (
             <p key={i} className={`text-[16px] text-white`}>
               #{info}
             </p>
           ))}
         </div>
-        <div className="mt-5 cursor-default">
+        <div className="mt-4 cursor-default">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="text-secondary text-[18px] mt-2">{description}</p>
         </div>
@@ -62,6 +48,10 @@ const ProjectCard = ({
               {tag.name}
             </p>
           ))}
+        </div>
+        <div className="mt-4 flex flex-row justify-evenly items-center w-full">
+          <div>link github</div>
+          <div>link live</div>
         </div>
       </Tilt>
     </motion.div>
