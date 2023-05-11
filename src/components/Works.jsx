@@ -65,7 +65,7 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My work</p>
+        <p className={styles.sectionSubText}>Done & Ongoing</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>
       <div className="w-full flex">
@@ -74,7 +74,7 @@ const Works = () => {
           className="mt-3 text-secondary
            sm:text-[24px] text-[18px] mx-w-3xl leading-[30px] cursor-default"
         >
-          Following projects showcase my skills and experience trought real-world examples of my work. Each project is briefly described and linked to the GitHub repository and the live version. <br /> In this section there are all kind of projects: finished ones and ongoing ones! <br /> I love creating projects related to my hobbies and my passions. I believe in <q>learning by doing</q> so... it's what I'm actually doing! 
+          Following projects showcase my skills and experience trought real-world examples of my work. Each project is briefly described and linked to the GitHub repository and the live version. <br /> I love creating projects related to my hobbies and my passions. I believe in <q>learning by doing</q> so... it's what I'm actually doing! 
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7 justify-center">
