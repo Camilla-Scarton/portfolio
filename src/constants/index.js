@@ -166,7 +166,7 @@ const projects = [
         },
       ],
     image: tripguide,
-    source_code_link: "https://github.com/Camilla-Scarton/Netflix-Project-Develhope",
+    source_code_link: "",
     site_link: "",
   },
   {
@@ -287,7 +287,7 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/Camilla-Scarton/Todo-app-green",
-    site_link: "",
+    site_link: "https://camilla-scarton.github.io/Todo-app-green/",
   },
   {
     info: ["game-serie"],
@@ -341,7 +341,7 @@ const projects = [
       ],
     image: tripguide,
     source_code_link: "https://github.com/Camilla-Scarton/portfolio",
-    site_link: "",
+    site_link: "https://camilla-scarton.github.io/portfolio/",
   },
 ];
 

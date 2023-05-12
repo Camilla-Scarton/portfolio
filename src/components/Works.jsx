@@ -53,12 +53,12 @@ const ProjectCard = ({
         </div>
         <div className="mt-4 flex flex-row justify-evenly items-center w-full text-[18px] text-white font-bold">
           {source_code_link && (
-            <a href={source_code_link}>
+            <a href={source_code_link} target="_blank">
               See code: <FontAwesomeIcon icon={faLaptopCode} size="xl" />
             </a>
           )}
           {site_link && (
-            <a href={site_link}>
+            <a href={site_link} target="_blank">
               See live: <FontAwesomeIcon icon={faLaptop} size="xl" />
             </a>
           )}
