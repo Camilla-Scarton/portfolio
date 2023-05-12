@@ -20,7 +20,7 @@ const ProjectCard = ({
   site_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} whileInView={{ opacity: 1 }}>
       <Tilt
         options={{
           max: 8,
@@ -28,38 +28,38 @@ const ProjectCard = ({
           speed: 450,
           axis: "x",
         }}
-        className="bg-tertiary p-5 rounded-2xl xs:w-[340px]"
+        className="bg-tertiary p-5 rounded-2xl xs:w-[340px] hover:border-2 hover:border-secondary"
       >
         <div className="flex flex-wrap gap-4 cursor-default">
           {info.map((info, i) => (
-            <p key={i} className={`text-[16px] text-white`}>
+            <p key={i} className={`text-[18px] text-white`}>
               #{info}
             </p>
           ))}
         </div>
         <div className="mt-4 cursor-default">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="text-secondary text-[18px] mt-2">{description}</p>
+          <p className="text-white text-[18px] mt-2">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-4 cursor-default">
           {tags.map((tag) => (
             <p
               key={tag.name}
-              className={`text-[16px] border border-white rounded-lg px-2 py-0.5 ${tag.color}`}
+              className={`text-[16px] border border-secondary rounded-lg px-2 py-0.5 ${tag.color}`}
             >
               {tag.name}
             </p>
           ))}
         </div>
-        <div className="mt-4 flex flex-row justify-evenly items-center w-full">
+        <div className="mt-4 flex flex-row justify-evenly items-center w-full text-[18px] text-white font-bold">
           {source_code_link && (
             <a href={source_code_link}>
-              <FontAwesomeIcon icon={faLaptopCode} size="xl" />
+              See code: <FontAwesomeIcon icon={faLaptopCode} size="xl" />
             </a>
           )}
           {site_link && (
             <a href={site_link}>
-              <FontAwesomeIcon icon={faLaptop} size="xl" />
+              See live: <FontAwesomeIcon icon={faLaptop} size="xl" />
             </a>
           )}
         </div>
@@ -71,12 +71,14 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} 
+      whileInView={{ opacity: 1 }}>
         <p className={styles.sectionSubText}>Done & Ongoing</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
+        whileInView={{ opacity: 1 }}
         className="mt-3 text-secondary
            sm:text-[24px] text-[18px] mx-w-3xl leading-[30px] cursor-default"
       >
@@ -86,7 +88,7 @@ const Works = () => {
         related to my hobbies and my passions. I believe in{" "}
         <q>learning by doing</q> so... it's what I'm actually doing!
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-7 justify-center">
+      <div className="mt-10 flex flex-wrap gap-7 justify-center">
         {projects.map((project, i) => (
           <ProjectCard key={`project-${i}`} index={i} {...project} />
         ))}

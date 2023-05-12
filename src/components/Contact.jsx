@@ -14,12 +14,12 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 const Contact = () => {
   return (
     <footer>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} whileInView={{ opacity: 1 }}>
         <p className={styles.sectionSubText}>Contact me</p>
         <h2 className={styles.sectionHeadText}>Links & Profiles</h2>
       </motion.div>
       <motion.div
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn("", "", 0.1, 1)} whileInView={{ opacity: 1 }}
         className="flex flex-row flex-wrap gap-6 mt-3 text-secondary
       sm:text-[24px] text-[18px] mx-w-3xl leading-[30px]"
       >
