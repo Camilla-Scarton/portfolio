@@ -1,0 +1,11 @@
+Model Information:
+* title:	Anatomy of a miniature rose - Photogrammetry
+* source:	https://sketchfab.com/3d-models/anatomy-of-a-miniature-rose-photogrammetry-e740eaaf387f4edd806b2d33af554500
+* author:	Raiz (https://sketchfab.com/RaizVR)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Anatomy of a miniature rose - Photogrammetry" (https://sketchfab.com/3d-models/anatomy-of-a-miniature-rose-photogrammetry-e740eaaf387f4edd806b2d33af554500) by Raiz (https://sketchfab.com/RaizVR) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
