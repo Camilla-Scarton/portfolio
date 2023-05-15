@@ -59,7 +59,7 @@ const experiences = [
     iconBg: "blue",
     date: "2015 - 2020",
     points: [
-      "Passed multiples exams including mathematical analysis, algebra and biology.",
+      "Passed multiples exams including mathematical analysis, algebra, informatics and biology.",
     ],
   },
   {
@@ -204,7 +204,7 @@ const projects = [
     info: ["develhope", "develhope-trilogy"],
     name: "Evolve",
     description:
-      "This is the final project made during the Develhope course. My team and I discussed an idea and created a web application for the fitness lovers. An interactive 3D model, two API calls and a total of four sections can be played with.",
+      "Final project made during the Develhope course. My team and I created a web application for the fitness lovers. An interactive 3D model, one API call and a total of 3 sections can be played with.",
       tags: [
         {
           name: "html",
@@ -262,7 +262,7 @@ const projects = [
     info: ["colors-serie", "green", "ongoing"],
     name: "Todo app",
     description:
-      "A React app where users can add new todos to the list displayed. The todos already in the list can be edited and/or deleted. All todos are saved in the local storage: in the next session or in case of refresh, users can still see them.",
+      "A React app where users can add new todos to the list displayed. The todos already in the list can be edited and/or deleted. All todos are saved in the local storage.",
     tags: [
       {
         name: "html",
