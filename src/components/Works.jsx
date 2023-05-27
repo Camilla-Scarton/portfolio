@@ -28,7 +28,7 @@ const ProjectCard = ({
           speed: 450,
           axis: "x",
         }}
-        className="bg-tertiary p-5 rounded-2xl xs:w-[340px] hover:border-2 hover:border-secondary"
+        className="bg-tertiary p-5 rounded-2xl xs:w-[340px] border-2 border-tertiary hover:border-2 hover:border-secondary"
       >
         <div className="flex flex-wrap gap-4 cursor-default">
           {info.map((info, i) => (
