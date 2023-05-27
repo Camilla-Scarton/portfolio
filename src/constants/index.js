@@ -71,7 +71,7 @@ const experiences = [
     date: "2014 - 2021",
     points: [
       "Helped young students from 11 to 16 years old to study maths and latin.",
-      "Remote lessons with Google Meet calls during Covid-19.",
+      "Remote lessons with Google Meet during Covid-19.",
     ],
   },
   {
@@ -82,7 +82,7 @@ const experiences = [
     iconBg: "brown",
     date: "Dec 2021 - May 2022",
     points: [
-      "Activities in 7+ class and in the school library to support students in the maths study.",
+      "Activities in 7+ classes and in the school library to support students in the maths study.",
       "Editing of a physic experiment video with OpenShot.",
       "Creation of two quizzes with Kahoot.it.",
       "Development of a web application with Code.org.",
@@ -101,7 +101,9 @@ const experiences = [
       "Full immersion in HTML, CSS, JavaScript, SASS, TypeScript, React and Node.js.",
       "170+ exercises done and 40+ hours of live coding.",
       "Pratical experience in team work, in the development of 3 projects with the Agile methodology.",
-      "Reproduction of the Netflix landing page. Reproduction of two pages of the Lego site. Ideation and creation of Evolve, a web application for the fitness lovers."
+      "Reproduction of the Netflix landing page.",
+      "Reproduction of two pages of the Lego site.",
+      "Ideation and creation of Evolve, a web application for the fitness lovers."
     ],
   },
 ];
