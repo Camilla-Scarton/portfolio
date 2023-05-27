@@ -108,6 +108,14 @@ const experiences = [
   },
 ];
 
+const filters = ["all", "react", "html+css+js", "games-serie", "colors-serie", "develhope"];
+// react: info.includes("react") && !info.includes("develhope")
+// html+css+js: -> tags.length === 3
+// games-serie: info.includes("games-serie")
+// colors-serie: info.includes("colors-serie")
+// devehope: info.includes("develhope") || info.includes("develhope-trilogy")
+// extra: vue, node
+
 const projects = [
   {
     info: ["develhope", "done"],
@@ -347,4 +355,4 @@ const projects = [
   },
 ];
 
-export { labels, experiences, projects };
+export { labels, experiences, projects, filters };

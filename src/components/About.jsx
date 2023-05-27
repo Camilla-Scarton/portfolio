@@ -21,7 +21,7 @@ const LabelCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450,
           }}
-          className="bg-tertiary rounded-[20px] p-4 sm:min-h-[100px] flex justify-evenly items-center flex-col"
+          className="bg-tertiary rounded-[20px] p-4 m-0.5 sm:min-h-[100px] flex justify-evenly items-center flex-col"
         >
           <h3 className="text-white text-[18px] sm:text-[20px] font-bold text-center">{title}</h3>
         </div>

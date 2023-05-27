@@ -3,11 +3,28 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { projects, filters } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 import { faLaptopCode, faLaptop } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const FilterForm = ({ filters }) => {
+  return (
+    <Tilt className="w-[200px] mx-auto my-10">
+      <motion.div
+        variants={fadeIn("right", "spring", 0, 1)}
+        whileInView={{ opacity: 1 }}
+      >
+        <form className="green-pink-gradient rounded-[20px] p-0.5">
+          <select className="appearance-none bg-tertiary w-full p-[9px] rounded-[20px] shadow-card text-center text-[18px] sm:text-[20px] font-bold focus-visible:outline-none hover:cursor-pointer">
+            {filters.map(filter => <option>#{filter}</option>)}
+          </select>
+        </form>
+      </motion.div>
+    </Tilt>
+  )
+}
 
 const ProjectCard = ({
   index,
@@ -88,6 +105,7 @@ const Works = () => {
         related to my hobbies and my passions. I believe in{" "}
         <q>learning by doing</q> so... it's what I'm actually doing!
       </motion.p>
+      <FilterForm filters={filters} />
       <div className="mt-10 flex flex-wrap gap-7 justify-center">
         {projects.map((project, i) => (
           <ProjectCard key={`project-${i}`} index={i} {...project} />
