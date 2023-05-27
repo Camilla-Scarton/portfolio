@@ -292,7 +292,7 @@ const projects = [
     site_link: "https://camilla-scarton.github.io/Todo-app-green/",
   },
   {
-    info: ["game-serie"],
+    info: ["games-serie"],
     name: "Tic, tac, toe",
     description:
       "Simple version of the tic, tac, toe game. Game logic is implemented and a message is displayed at the end. Game board can be reset any time.",
