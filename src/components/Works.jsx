@@ -8,23 +8,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 import { faLaptopCode, faLaptop } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-const FilterForm = ({ filters }) => {
-  return (
-    <Tilt className="w-[200px] mx-auto my-10">
-      <motion.div
-        variants={fadeIn("right", "spring", 0, 1)}
-        whileInView={{ opacity: 1 }}
-      >
-        <form className="green-pink-gradient rounded-[20px] p-0.5">
-          <select className="appearance-none bg-tertiary w-full p-[9px] rounded-[20px] shadow-card text-center text-[18px] sm:text-[20px] font-bold focus-visible:outline-none hover:cursor-pointer">
-            {filters.map(filter => <option>#{filter}</option>)}
-          </select>
-        </form>
-      </motion.div>
-    </Tilt>
-  )
-}
+import { useState } from "react";
 
 const ProjectCard = ({
   index,
@@ -37,7 +21,10 @@ const ProjectCard = ({
   site_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} whileInView={{ opacity: 1 }}>
+    <motion.div
+      variants={fadeIn("", "spring", index * 0.5, 0.75)}
+      whileInView={{ opacity: 1 }}
+    >
       <Tilt
         options={{
           max: 8,
@@ -86,10 +73,45 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const [filteredProjects, setFilteredProjects] = useState([]);
+
+  function handleFilterChange(evt) {
+    const choice = evt.target.value;
+    switch (choice) {
+      case "all":
+        setFilteredProjects([]);
+        break;
+      case "react":
+        setFilteredProjects(projects.filter((el) => el.info.includes("react")));
+        break;
+      case "html+css+js":
+        setFilteredProjects(
+          projects.filter(
+            (el) => el.tags.length === 3 && !el.info.includes("develhope")
+          )
+        );
+        break;
+      case "games-serie":
+        setFilteredProjects(
+          projects.filter((el) => el.info.includes("games-serie"))
+        );
+        break;
+      case "colors-serie":
+        setFilteredProjects(
+          projects.filter((el) => el.info.includes("colors-serie"))
+        );
+        break;
+      case "develhope":
+        setFilteredProjects(
+          projects.filter((el) => el.info.includes("develhope"))
+        );
+        break;
+    }
+  }
+
   return (
     <>
-      <motion.div variants={textVariant()} 
-      whileInView={{ opacity: 1 }}>
+      <motion.div variants={textVariant()} whileInView={{ opacity: 1 }}>
         <p className={styles.sectionSubText}>Done & Ongoing</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>
@@ -105,11 +127,35 @@ const Works = () => {
         related to my hobbies and my passions. I believe in{" "}
         <q>learning by doing</q> so... it's what I'm actually doing!
       </motion.p>
-      <FilterForm filters={filters} />
+      <Tilt className="w-[200px] mx-auto my-10">
+        <motion.div
+          variants={fadeIn("right", "spring", 0, 1)}
+          whileInView={{ opacity: 1 }}
+        >
+          <form className="green-pink-gradient rounded-[20px] p-0.5">
+            <select
+              name="filters"
+              id="filters"
+              className="appearance-none bg-tertiary w-full p-[9px] rounded-[20px] shadow-card text-center text-[18px] sm:text-[20px] font-bold focus-visible:outline-none hover:cursor-pointer"
+              onChange={handleFilterChange}
+            >
+              {filters.map((filter, i) => (
+                <option key={`filter-key-${i}`} value={filter}>
+                  #{filter}
+                </option>
+              ))}
+            </select>
+          </form>
+        </motion.div>
+      </Tilt>
       <div className="mt-10 flex flex-wrap gap-7 justify-center">
-        {projects.map((project, i) => (
-          <ProjectCard key={`project-${i}`} index={i} {...project} />
-        ))}
+        {filteredProjects.length === 0
+          ? projects.map((project, i) => (
+              <ProjectCard key={`project-${i}`} index={i} {...project} />
+            ))
+          : filteredProjects.map((project, i) => (
+              <ProjectCard key={`project-${i}`} index={i} {...project} />
+            ))}
       </div>
     </>
   );

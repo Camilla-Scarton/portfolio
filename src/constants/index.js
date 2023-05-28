@@ -269,7 +269,7 @@ const projects = [
     site_link: "https://camilla-scarton.github.io/mato/",
   },
   {
-    info: ["colors-serie", "green", "ongoing"],
+    info: ["colors-serie", "green", "react"],
     name: "Todo app",
     description:
       "A React app where users can add new todos to the list displayed. The todos already in the list can be edited and/or deleted. All todos are saved in the local storage.",
@@ -323,7 +323,7 @@ const projects = [
     site_link: "https://camilla-scarton.github.io/tic-tac-toe/",
   },
   {
-    info: ["personal", "ongoing"],
+    info: ["personal", "react", "ongoing"],
     name: "Portfolio",
     description:
       "Every project needs a repository. The source code of this site is on my GitHub profile and here there is a link for it.",
