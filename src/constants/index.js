@@ -353,6 +353,33 @@ const projects = [
     source_code_link: "https://github.com/Camilla-Scarton/portfolio",
     site_link: "https://camilla-scarton.github.io/portfolio/",
   },
+  {
+    info: ["react", "api"],
+    name: "My Pokédex",
+    description:
+      "My Pokédex loads a list of 15 consecutive pokémon. User can sort them by type, see next or previous ones using buttons and choose one pokémon from the list to see more details below.",
+      tags: [
+        {
+          name: "html",
+          color: "text-blue-500",
+        },
+        {
+          name: "css",
+          color: "text-yellow-300",
+        },
+        {
+          name: "javascript",
+          color: "text-green-400",
+        },
+        {
+          name: "react",
+          color: "text-purple-400",
+        }
+      ],
+    image: tripguide,
+    source_code_link: "https://github.com/Camilla-Scarton/pokedex",
+    site_link: "https://camilla-scarton.github.io/pokedex/",
+  },
 ];
 
 export { labels, experiences, projects, filters };
