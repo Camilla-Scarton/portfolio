@@ -109,12 +109,6 @@ const experiences = [
 ];
 
 const filters = ["all", "react", "html+css+js", "games-serie", "colors-serie", "develhope"];
-// react: info.includes("react") && !info.includes("develhope")
-// html+css+js: -> tags.length === 3
-// games-serie: info.includes("games-serie")
-// colors-serie: info.includes("colors-serie")
-// devehope: info.includes("develhope") || info.includes("develhope-trilogy")
-// extra: vue, node
 
 const projects = [
   {
@@ -379,6 +373,29 @@ const projects = [
     image: tripguide,
     source_code_link: "https://github.com/Camilla-Scarton/pokedex",
     site_link: "https://camilla-scarton.github.io/pokedex/",
+  },
+  {
+    info: ["games-serie"],
+    name: "Snake",
+    description:
+      "Simple version of Snake with two game modes to choose from. Select one mode and eat the apples to hear the sound effects! Eaten apples count is displayed as score.",
+    tags: [
+      {
+        name: "html",
+        color: "text-blue-500",
+      },
+      {
+        name: "css",
+        color: "text-yellow-300",
+      },
+      {
+        name: "javascript",
+        color: "text-green-400",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/Camilla-Scarton/snake",
+    site_link: "https://camilla-scarton.github.io/snake/",
   },
 ];
 
