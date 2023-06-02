@@ -110,6 +110,45 @@ const experiences = [
 
 const filters = ["all", "react", "html+css+js", "games-serie", "colors-serie", "develhope"];
 
+const allTags = [
+  {
+    name: "html",
+    color: "text-blue-500",
+  },
+  {
+    name: "css",
+    color: "text-yellow-300",
+  },
+  {
+    name: "scss",
+    color: "text-pink-400",
+  },
+  {
+    name: "javascript",
+    color: "text-green-400",
+  },
+  {
+    name: "react",
+    color: "text-purple-400",
+  },
+  {
+    name: "typescript",
+    color: "text-red-500",
+  },
+  {
+    name: "node.js",
+    color: "text-cyan-300",
+  },
+  {
+    name: "express.js",
+    color: "text-orange-500",
+  },
+  {
+    name: "mongodb",
+    color: "text-lime-400",
+  },
+]
+
 const projects = [
   {
     info: ["develhope", "done"],
@@ -154,7 +193,7 @@ const projects = [
     info: ["develhope", "develhope-trilogy"],
     name: "Netflix clone",
     description:
-      "Simple clone of the Netflix principal page that was created in a team work.",
+      "Simple clone of the Netflix principal page that was created in a team work. The most important elements in the page were the two identical forms, the film cards and an accordions section.",
       tags: [
         {
           name: "html",
@@ -177,7 +216,7 @@ const projects = [
     info: ["develhope", "develhope-trilogy"],
     name: "Lego clone",
     description:
-      "Simple clone of two pages of the Lego site, created in a team work during the winter season. Some parts are in the Christmas version.",
+      "Simple clone of the Lego site, created in a team work during the winter season. The principal page is connected to the Hulkbuster product page. Some parts are in the Christmas version.",
       tags: [
         {
           name: "html",
@@ -373,6 +412,33 @@ const projects = [
     image: tripguide,
     source_code_link: "https://github.com/Camilla-Scarton/pokedex",
     site_link: "https://camilla-scarton.github.io/pokedex/",
+  },
+  {
+    info: ["node", "api", "done"],
+    name: "Phonebook project",
+    description:
+      "RESTful phonebook made with Express.js and MongoDB. Users can login and modify their contacts. All CRUD methods are implemented to manage users and contacts. Authentication is based on JWT.",
+      tags: [
+        {
+          name: "javascript",
+          color: "text-green-400",
+        },
+        {
+          name: "node.js",
+          color: "text-cyan-300",
+        },
+        {
+          name: "express.js",
+          color: "text-orange-500",
+        },
+        {
+          name: "mongodb",
+          color: "text-lime-400",
+        },
+      ],
+    image: tripguide,
+    source_code_link: "https://github.com/Camilla-Scarton/phonebook-node-project",
+    site_link: "",
   },
   {
     info: ["games-serie"],
