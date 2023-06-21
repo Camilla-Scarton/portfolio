@@ -463,6 +463,33 @@ const projects = [
     source_code_link: "https://github.com/Camilla-Scarton/snake",
     site_link: "https://camilla-scarton.github.io/snake/",
   },
+  {
+    info: ["react", "api"],
+    name: "My Pokémon app",
+    description:
+      "Cool Pokémon theme project. The landing page gives details and links to other sections. The List part has an infinite scrolling list of Pokémon cards. In the Form part, Pokémon can be found by id or name.",
+      tags: [
+        {
+          name: "html",
+          color: "text-blue-500",
+        },
+        {
+          name: "css",
+          color: "text-yellow-300",
+        },
+        {
+          name: "javascript",
+          color: "text-green-400",
+        },
+        {
+          name: "react",
+          color: "text-purple-400",
+        }
+      ],
+    image: tripguide,
+    source_code_link: "https://github.com/Camilla-Scarton/pokemon-app",
+    site_link: "https://camilla-scarton.github.io/pokemon-app/",
+  },
 ];
 
 export { labels, experiences, projects, filters };
