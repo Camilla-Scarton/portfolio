@@ -444,7 +444,7 @@ const projects = [
     info: ["games-serie"],
     name: "Snake",
     description:
-      "Simple version of Snake with two game modes to choose from. Select one mode and eat the apples to hear the sound effects! Eaten apples count is displayed as score.",
+      "Cool version of the game Snake. Players can choose snake speed, game mode and the fruits to eat. Live and best score are shown on board side. Game can be paused and settings can be reset.",
     tags: [
       {
         name: "html",
