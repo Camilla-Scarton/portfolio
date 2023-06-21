@@ -11,7 +11,7 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
-import { faBook, faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faBook, faBriefcase, faScroll } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ExperienceCard = ({ experience }) => {
@@ -24,8 +24,10 @@ const ExperienceCard = ({ experience }) => {
       icon={
         experience.type == "study" ? (
           <FontAwesomeIcon icon={faBook} size="xl" />
-        ) : (
+        ) : experience.type == "job" ? (
           <FontAwesomeIcon icon={faBriefcase} size="xl" />
+        ) : (
+          <FontAwesomeIcon icon={faScroll} size="xl" />
         )
       }
     >
@@ -38,7 +40,7 @@ const ExperienceCard = ({ experience }) => {
           {experience.company_name}
         </p>
       </div>
-      <ul className="mt-5 list-disc ml-5 space-y-2">
+      {experience.points && <ul className="mt-5 list-disc ml-5 space-y-2">
         {experience.points.map((point, i) => (
           <li
             key={`experience-point-${i}`}
@@ -47,7 +49,8 @@ const ExperienceCard = ({ experience }) => {
             {point}
           </li>
         ))}
-      </ul>
+      </ul>}
+      
     </VerticalTimelineElement>
   );
 };

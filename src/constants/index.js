@@ -39,8 +39,16 @@ const labels = [
 
 const experiences = [
   {
+    type: "certificate",
+    title: "A2 Key for Schools qualification",
+    company_name: "Cambridge English",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "2008",
+  },
+  {
     type: "study",
-    title: "Maturità classica",
+    title: "High School",
     company_name: "Dal Piaz High School",
     icon: starbucks,
     iconBg: "blue",
@@ -50,6 +58,22 @@ const experiences = [
       "Cultural Exchange in Hungary with Kiskunfélegyházi Móra Ferenc Gimnázium.",
       "English Summer School at Brighton Language College in the United Kindom.",
     ],
+  },
+  {
+    type: "certificate",
+    title: "B2 First qualification",
+    company_name: "Cambridge English",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "2014",
+  },
+  {
+    type: "certificate",
+    title: "Maturità classica",
+    company_name: "Dal Piaz High School",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "2015",
   },
   {
     type: "study",
@@ -75,19 +99,64 @@ const experiences = [
     ],
   },
   {
+    type: "certificate",
+    title: "Coursera online course",
+    company_name: "Coursera",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "Aug 2021",
+    points: [
+      "Attendance of a non-credit course authorized by Wesleyan University about socio-cultural, geographical and environmental topics.",
+      "A total of 6 essays written and peer reviewed.",
+    ],
+  },
+  {
     type: "job",
-    title: '"S.O.Scienze" Project',
+    title: '"S.O.Scienze" Civil Service Project',
     company_name: "Sophie Scholl High School",
     icon: starbucks,
     iconBg: "brown",
     date: "Dec 2021 - May 2022",
     points: [
       "Activities in 7+ classes and in the school library to support students in the maths study.",
-      "Editing of a physic experiment video with OpenShot.",
-      "Creation of two quizzes with Kahoot.it.",
-      "Development of a web application with Code.org.",
-      "Creation of a slide show presentation for 4+ hours of lesson.",
-      "Certification of skills with the Franco Demarchi fondation."
+      "Didactic activities: creation of a slide show presentation for 4+ hours of lesson, creation of two quizzes with Kahoot.it.",
+      "Lab activities: editing of a physic experiment video with OpenShot, development of a web application with Code.org.",
+      "Certification of skills with the Franco Demarchi Fondation."
+    ],
+  },
+  {
+    type: "certificate",
+    title: "Dossier individuale",
+    company_name: "Franco Demarchi Fondation",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "May 2022 - June 2023",
+    points: [
+      "Certification of the most important experiences made during the Civil Service at the Sophie Scholl High School.",
+      "Through texts and photos, the Dossier certifies my achievement of one of the four skills relating to the Tutor professional figure as specified in the Lombardy region.",
+    ],
+  },
+  {
+    type: "certificate",
+    title: "Boolean Coding Week",
+    company_name: "Boolean",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "June 2022",
+    points: [
+      "Certificate of attendance of the third edition of the Boolean Coding Week: 5 live lessons, 10 hours of course and 4 web application created.",
+    ],
+  },
+  {
+    type: "certificate",
+    title: "Lacerba online courses",
+    company_name: "Lacerba",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "June 2022 - Aug 2022",
+    points: [
+      "Completion of 5 courses about programming, JavaScript, TypeScript, Node and React.",
+      "Completion of 1 course about time management and productivity.",
     ],
   },
   {
@@ -101,10 +170,50 @@ const experiences = [
       "Full immersion in HTML, CSS, JavaScript, SASS, TypeScript, React and Node.js.",
       "170+ exercises done and 40+ hours of live coding.",
       "Pratical experience in team work, in the development of 3 projects with the Agile methodology.",
-      "Reproduction of the Netflix landing page.",
-      "Reproduction of two pages of the Lego site.",
+      "Reproduction of the Netflix landing page and reproduction of two pages of the Lego site.",
       "Ideation and creation of Evolve, a web application for the fitness lovers."
     ],
+  },
+  {
+    type: "certificate",
+    title: "Full Stack Developer Certificate",
+    company_name: "Develhope",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "March 2023",
+  },
+  {
+    type: "certificate",
+    title: "Lacerba online courses",
+    company_name: "Lacerba",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "June 2023",
+    points: [
+      "Completion of 4 courses about UX/UI and graphic design.",
+    ],
+  },
+  {
+    type: "certificate",
+    title: "Boolean Coding Week",
+    company_name: "Boolean",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "June 2023",
+    points: [
+      "Certificate of attendance of the fifth edition of the Boolean Coding Week: 4 live lessons, 8 hours of course and 3 web application created.",
+    ],
+  },
+  {
+    type: "job",
+    title: "*-*",
+    company_name: "",
+    icon: starbucks,
+    iconBg: "brown",
+    date: "",
+    // points: [
+    //   "",
+    // ],
   },
 ];
 
