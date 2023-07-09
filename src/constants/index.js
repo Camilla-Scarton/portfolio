@@ -206,14 +206,11 @@ const experiences = [
   },
   {
     type: "job",
-    title: "*-*",
-    company_name: "",
+    title: "Developer",
+    company_name: "SEAC S.p.A.",
     icon: starbucks,
     iconBg: "brown",
-    date: "",
-    // points: [
-    //   "",
-    // ],
+    date: "June 2023 - Now",
   },
 ];
 
@@ -598,6 +595,29 @@ const projects = [
     image: tripguide,
     source_code_link: "https://github.com/Camilla-Scarton/pokemon-app",
     site_link: "https://camilla-scarton.github.io/pokemon-app/",
+  },
+  {
+    info: ["games-serie"],
+    name: "Rock, Paper, Scissors, Lizard, Spock",
+    description:
+      "Simple version of the traditional game with the Lizard and Spock expansion. The colors palette is a greyscale. It would be great if players remembered that it's not a bug if it's a feature...",
+    tags: [
+      {
+        name: "html",
+        color: "text-blue-500",
+      },
+      {
+        name: "css",
+        color: "text-yellow-300",
+      },
+      {
+        name: "javascript",
+        color: "text-green-400",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/Camilla-Scarton/rock-paper-scissors-lizard-spock",
+    site_link: "https://camilla-scarton.github.io/rock-paper-scissors-lizard-spock/",
   },
 ];
 
