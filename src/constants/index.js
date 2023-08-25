@@ -212,6 +212,17 @@ const experiences = [
     iconBg: "brown",
     date: "June 2023 - Now",
   },
+  {
+    type: "certificate",
+    title: "Seac Cefor S.r.l. online courses",
+    company_name: "Seac Cefor S.r.l.",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "July 2023 - Aug 2023",
+    points: [
+      'Completion of 3 courses about the GDPR (3 hours), the security at work (8 hours) and the administrative liability of companies (2 hours).',
+    ],
+  },
 ];
 
 const filters = ["all", "react", "html+css+js", "games-serie", "colors-serie", "develhope"];
