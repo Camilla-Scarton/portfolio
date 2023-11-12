@@ -224,11 +224,11 @@ const experiences = [
     ],
   },
   {
-    type: "certificate",
+    type: "study",
     title: "Java online courses",
     company_name: "Overnet Education",
     icon: starbucks,
-    iconBg: "purple",
+    iconBg: "blue",
     date: "Sept 2023 - Oct 2023",
     points: [
       "Completion of the Base Java Course: a total of 40 hours divided into theory and exercises (Eclipse).",
