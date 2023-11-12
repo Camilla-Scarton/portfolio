@@ -7,9 +7,9 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
-  faScrewdriverWrench,
+  faShieldHalved
 } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faFreeCodeCamp } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
@@ -36,8 +36,12 @@ const Contact = () => {
           <span className="px-3">Gmail</span>
         </a>
         <a href="https://www.codewars.com/users/Camilla%20Scarton">
-          <FontAwesomeIcon icon={faScrewdriverWrench} size="2xl" />
+          <FontAwesomeIcon icon={faShieldHalved} size="2xl" />
           <span className="px-3">Codewars</span>
+        </a>
+        <a href="https://www.freecodecamp.org/Camilla_Scarton">
+          <FontAwesomeIcon icon={faFreeCodeCamp} size="2xl" />
+          <span className="px-3">freeCodeCamp</span>
         </a>
       </motion.div>
     </footer>
