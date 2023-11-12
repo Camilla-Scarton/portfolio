@@ -223,6 +223,42 @@ const experiences = [
       'Completion of 3 courses about the GDPR (3 hours), the security at work (8 hours) and the administrative liability of companies (2 hours).',
     ],
   },
+  {
+    type: "certificate",
+    title: "Java online courses",
+    company_name: "Overnet Education",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "Sept 2023 - Oct 2023",
+    points: [
+      "Completion of the Base Java Course: a total of 40 hours divided into theory and exercises (Eclipse).",
+      "Completion of the Intermediate Java Course: a total of 40 hours divided into theory and exercises (Eclipse).",
+    ],
+  },
+  {
+    type: "certificate",
+    title: "Boolean Coding Week",
+    company_name: "Boolean",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "October 2023",
+    points: [
+      "Certificate of attendance of the sixth edition of the Boolean Coding Week: 4 live lessons, 8 hours of course and 3 web application created.",
+    ],
+  },
+  {
+    type: "certificate",
+    title: "Responsive Web Design certificate",
+    company_name: "freeCodeCamp",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "November 2023",
+    points: [
+      "Approximately 300 hours of work.",
+      "Five projects built.", 
+      "All automated test suites passed."
+    ]
+  },
 ];
 
 const filters = ["all", "react", "html+css+js", "games-serie", "colors-serie", "develhope"];
