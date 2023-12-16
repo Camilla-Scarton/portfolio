@@ -32,30 +32,32 @@ const ProjectCard = ({
           speed: 450,
           axis: "x",
         }}
-        className="bg-tertiary p-5 rounded-2xl xs:w-[340px] border-2 border-tertiary hover:border-2 hover:border-secondary"
+        className="h-full bg-tertiary flex flex-col justify-between p-5 rounded-2xl xs:w-[340px] border-2 border-tertiary hover:border-2 hover:border-secondary"
       >
-        <div className="flex flex-wrap gap-4 cursor-default">
-          {info.map((info, i) => (
-            <p key={i} className={`text-[18px] text-white`}>
-              #{info}
-            </p>
-          ))}
+        <div>
+          <div className="flex flex-wrap gap-4 cursor-default">
+            {info.map((info, i) => (
+              <p key={i} className={`text-[18px] text-white`}>
+                #{info}
+              </p>
+            ))}
+          </div>
+          <div className="mt-4 cursor-default">
+            <h3 className="text-white font-bold text-[24px]">{name}</h3>
+            <p className="text-white text-justify text-[18px] mt-4">{description}</p>
+          </div>
+          <div className="my-6 flex flex-wrap justify-center gap-4 cursor-default">
+            {tags.map((tag) => (
+              <p
+                key={tag.name}
+                className={`text-[16px] border border-secondary rounded-lg px-2 py-0.5 ${tag.color}`}
+              >
+                {tag.name}
+              </p>
+            ))}
+          </div>
         </div>
-        <div className="mt-4 cursor-default">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="text-white text-[18px] mt-2">{description}</p>
-        </div>
-        <div className="mt-4 flex flex-wrap gap-4 cursor-default">
-          {tags.map((tag) => (
-            <p
-              key={tag.name}
-              className={`text-[16px] border border-secondary rounded-lg px-2 py-0.5 ${tag.color}`}
-            >
-              {tag.name}
-            </p>
-          ))}
-        </div>
-        <div className="mt-4 flex flex-row justify-evenly items-center w-full text-[18px] text-white font-bold">
+        <div className="flex flex-row justify-evenly items-center w-full text-[18px] text-white font-bold">
           {source_code_link && (
             <a href={source_code_link} target="_blank">
               See code: <FontAwesomeIcon icon={faLaptopCode} size="xl" />
@@ -150,7 +152,7 @@ const Works = () => {
           </form>
         </motion.div>
       </Tilt>
-      <div className="mt-10 flex flex-wrap gap-7 justify-center">
+      <div className="mt-10 flex flex-wrap gap-7 items-strech justify-center">
         {filteredProjects.length === 0
           ? projects.map((project, i) => (
               <ProjectCard key={`project-${i}`} index={i} {...project} />
