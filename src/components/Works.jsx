@@ -133,18 +133,20 @@ const Works = () => {
           whileInView={{ opacity: 1 }}
         >
           <form className="green-pink-gradient rounded-[20px] p-0.5">
-            <select
-              name="filters"
-              id="filters"
-              className="appearance-none bg-tertiary w-full p-[9px] rounded-[20px] shadow-card text-center text-[18px] sm:text-[20px] font-bold focus-visible:outline-none hover:cursor-pointer"
-              onChange={handleFilterChange}
-            >
-              {filters.map((filter, i) => (
-                <option key={`filter-key-${i}`} value={filter}>
-                  #{filter}
-                </option>
-              ))}
-            </select>
+            <label htmlFor="filters" aria-label={`Select filter for projects`}>
+              <select
+                name="filters"
+                id="filters"
+                className="appearance-none bg-tertiary w-full p-[9px] rounded-[20px] shadow-card text-center text-[18px] sm:text-[20px] font-bold focus-visible:outline-none hover:cursor-pointer"
+                onChange={handleFilterChange}
+              >
+                {filters.map((filter, i) => (
+                  <option key={`filter-key-${i}`} value={filter}>
+                    #{filter}
+                  </option>
+                ))}
+              </select>
+            </label>
           </form>
         </motion.div>
       </Tilt>
