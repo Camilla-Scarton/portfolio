@@ -251,11 +251,24 @@ const experiences = [
   },
   {
     type: "certificate",
-    title: "Responsive Web Design certificate",
+    title: "Responsive Web Design Certificate",
     company_name: "freeCodeCamp",
     icon: starbucks,
     iconBg: "purple",
     date: "November 2023",
+    points: [
+      "Approximately 300 hours of work.",
+      "Five projects built.", 
+      "All automated test suites passed."
+    ]
+  },
+  {
+    type: "certificate",
+    title: "JavaScript Algorithms and Data Structures Certificate",
+    company_name: "freeCodeCamp",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "December 2023",
     points: [
       "Approximately 300 hours of work.",
       "Five projects built.", 
