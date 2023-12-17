@@ -323,7 +323,7 @@ const projects = [
     info: ["develhope", "done"],
     name: "Develhope exercises",
     description:
-      "All exercises done during the Develhope course are in this repository. In six months, I completed 170+ exercises focus on HTML, CSS, SASS, JavaScript, React, TypeScript and Node.js.",
+      "In the Develhope bootcamp, I've completed in six months 170+ exercises delving into HTML, CSS, SASS, JavaScript, React, TypeScript and Node.js.",
       tags: [
         {
           name: "html",
@@ -362,7 +362,7 @@ const projects = [
     info: ["develhope", "develhope-trilogy"],
     name: "Netflix clone",
     description:
-      "Simple clone of the Netflix principal page that was created in a team work. The most important elements in the page were the two identical forms, the film cards and an accordions section.",
+      "Netflix landing page recreated in my first teamwork. Key features in the page were the two matching forms, the film cards and an accordions section.",
       tags: [
         {
           name: "html",
@@ -385,7 +385,7 @@ const projects = [
     info: ["develhope", "develhope-trilogy"],
     name: "Lego clone",
     description:
-      "Simple clone of the Lego site, created in a team work during the winter season. The principal page is connected to the Hulkbuster product page. Some parts are in the Christmas version.",
+      "Lego site rebuilt with the landing page linked to the Hulkbuster product page. As result of a winter teamwork, some elements reflect the Christmas version.",
       tags: [
         {
           name: "html",
@@ -416,7 +416,7 @@ const projects = [
     info: ["develhope", "develhope-trilogy"],
     name: "Evolve",
     description:
-      "Final project made during the Develhope course. My team and I created a web application for the fitness lovers. An interactive 3D model, one API call and a total of 3 sections can be played with.",
+      "The final project at Develhope was designed and created by my team as a web app tailored for fitness lovers with an interactive 3D model, the Google Maps API and a login.",
       tags: [
         {
           name: "html",
@@ -528,7 +528,7 @@ const projects = [
     info: ["personal", "react", "ongoing"],
     name: "Portfolio",
     description:
-      "Every project needs a repository. The source code of this site is on my GitHub profile and here there is a link for it.",
+      "Every cool project deserves both a repository and a card here. The source code for my first portfolio, this site, is available on my GitHub profile.",
       tags: [
         {
           name: "html",
@@ -559,7 +559,7 @@ const projects = [
     info: ["react", "api"],
     name: "My Pokédex",
     description:
-      "My Pokédex loads a list of 15 consecutive pokémon. User can sort them by type, see next or previous ones using buttons and choose one pokémon from the list to see more details below.",
+      "My Pokédex loads a list of 15 consecutive pokémon. Users can sort them by type, see next and previous ones or choose one in the list to see more details below.",
       tags: [
         {
           name: "html",
@@ -586,7 +586,7 @@ const projects = [
     info: ["node", "api", "done"],
     name: "Phonebook project",
     description:
-      "RESTful phonebook made with Express.js and MongoDB. Users can login and modify their contacts. All CRUD methods are implemented to manage users and contacts. Authentication is based on JWT.",
+      "RESTful phonebook made with Express.js and MongoDB. Users can login and modify their contacts. All CRUD methods are implemented. Authentication is based on JWT.",
       tags: [
         {
           name: "javascript",
@@ -613,7 +613,7 @@ const projects = [
     info: ["games-serie"],
     name: "Snake",
     description:
-      "Cool version of the game Snake. Players can choose snake speed, game mode and the fruits to eat. Live and best score are shown on board side. Game can be paused and settings can be reset.",
+      "Cool version of Snake. Players can choose game mode, snake speed and fruits to eat. Both live and best scores are shown on the side, with pause and reset buttons too.",
     tags: [
       {
         name: "html",
@@ -636,7 +636,7 @@ const projects = [
     info: ["react", "api"],
     name: "My Pokémon app",
     description:
-      "Cool Pokémon theme project. The landing page gives details and links to other sections. The List part has an infinite scrolling list of Pokémon cards. In the Form part, Pokémon can be found by id or name.",
+      "Cool Pokémon theme project. The landing page offers some details and links for the inner sections. Key features are the infinite scrolling Pokémon list and the search form.",
       tags: [
         {
           name: "html",
@@ -663,7 +663,7 @@ const projects = [
     info: ["games-serie"],
     name: "Rock, Paper, Scissors, Lizard, Spock",
     description:
-      "Simple version of the traditional game with the Lizard and Spock expansion. The colors palette is a greyscale. It would be great if players remembered that it's not a bug if it's a feature...",
+      'Traditional "Rock, Paper, Scissors" game with the Lizard and Spock expansion. The colors palette is a greyscale. Players must remember: "It\'s not a bug if it\'s a feature".',
     tags: [
       {
         name: "html",

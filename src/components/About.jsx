@@ -38,7 +38,7 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
       <motion.p variants={fadeIn("", "", 0.1, 1)} whileInView={{ opacity: 1 }} className="mt-4 text-secondary sm:text-[24px] text-[18px] mx-w-3xl leading-[30px] cursor-default">
-          I'm a junior web developer with experience in JavaScript (300+ exercises done at Codewars) and expertise in React (6 months of full immersion in Develhope). I love Tailwind CSS for styling. This portfolio is meant to be a nice view of my GitHub projects and my experiences so far.
+        Passionate about web development, I have honed my JavaScript skills through 300+ Codewars exercises and consistent practise. I'm proficient in React, mastered at Develhope, and adept in Angular through my professional journey. As a hobby, I collect certificates!
       </motion.p>
       <div className="mt-10 flex flex-wrap justify-center gap-4 xs:gap-7">
         {labels.map((label, i) => <LabelCard key={label.title} index={i} {...label} />)}

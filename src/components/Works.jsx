@@ -44,7 +44,7 @@ const ProjectCard = ({
           </div>
           <div className="mt-4 cursor-default">
             <h3 className="text-white font-bold text-[24px]">{name}</h3>
-            <p className="text-white text-justify text-[18px] mt-4">{description}</p>
+            <p className="text-white text-justify text-[18px] mt-4 pb-3">{description}</p>
           </div>
           <div className="my-6 flex flex-wrap justify-center gap-4 cursor-default">
             {tags.map((tag) => (
@@ -123,11 +123,8 @@ const Works = () => {
         className="mt-3 text-secondary
            sm:text-[24px] text-[18px] mx-w-3xl leading-[30px] cursor-default"
       >
-        Following projects showcase my skills and experience trought real-world
-        examples of my work. Each project is briefly described and linked to the
-        GitHub repository and the live version. <br /> I love creating projects
-        related to my hobbies and my passions. I believe in{" "}
-        <q>learning by doing</q> so... it's what I'm actually doing!
+        Explore the following projects for tangible evidence of my skills and experience through real-world examples. Each project is briefly described and linked to both its
+        GitHub repository and live version. Learning by doing is my ongoing philosophy in action!
       </motion.p>
       <Tilt className="w-[200px] mx-auto my-10">
         <motion.div
