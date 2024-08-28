@@ -107,7 +107,7 @@ const experiences = [
     company_name: "Coursera",
     icon: starbucks,
     iconBg: "purple",
-    date: "Aug 2021",
+    date: "August 2021",
     points: [
       "Attendance of a non-credit course authorized by Wesleyan University about socio-cultural, geographical and environmental topics.",
       "A total of 6 essays written and peer reviewed.",
@@ -286,6 +286,19 @@ const experiences = [
       "Certificate of attendance of the fourth edition of the Boolean Data Week.", 
       "4 live lessons (8 hours of course) introducing Python/Pandas for data analysis and Tableau for data visualization.",
     ],
+  },
+  {
+    type: "certificate",
+    title: "Front End Development Libraries Certificate",
+    company_name: "freeCodeCamp",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "August 2024",
+    points: [
+      "Approximately 300 hours of work.",
+      "Five projects built.", 
+      "All automated test suites passed."
+    ]
   },
 ];
 

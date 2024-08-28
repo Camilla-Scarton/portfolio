@@ -64,9 +64,11 @@ const Experience = () => {
       </motion.div>
       <div className="mt-10 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((exp, i) => (
-            <ExperienceCard key={i} experience={exp} />
-          ))}
+          {experiences
+            .reduce((acc, item) => [item].concat(acc), [])
+            .map((exp, i) => (
+              <ExperienceCard key={i} experience={exp} />
+            ))}
         </VerticalTimeline>
       </div>
     </>
