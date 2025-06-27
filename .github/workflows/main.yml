@@ -1,0 +1,52 @@
+# This workflow deploys a React project to GitHub Pages
+# whenever a commit is pushed to the 'main' branch.
+
+name: Deploy React to GitHub Pages
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on pushes to the "main" branch
+  push:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build-and-deploy:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Step 1: Checks out your repository under $GITHUB_WORKSPACE, so your job can access it.
+      # This is essential for accessing your project files.
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js environment.
+      # Specify the Node.js version you are using for your React project.
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18' # You can change this to your preferred Node.js version (e.g., '18', '22')
+
+      # Step 3: Install project dependencies.
+      # This runs 'npm install' or 'yarn install' based on your lock file.
+      - name: Install dependencies
+        run: npm install # Or 'yarn install' if you use Yarn
+
+      # Step 4: Build the React project for production.
+      # This typically creates a 'build' folder with optimized static assets.
+      - name: Build React app
+        run: npm run build # Or 'yarn build' if you use Yarn
+
+      # Step 5: Deploy the built application to GitHub Pages.
+      # This action pushes the 'build' directory content to the 'gh-pages' branch.
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4 # Using version 4 of the action
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub's built-in token for authentication
+          publish_dir: ./dist # The directory that contains your built React app
+
