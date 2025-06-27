@@ -300,6 +300,32 @@ const experiences = [
       "All automated test suites passed."
     ]
   },
+  {
+    type: "certificate",
+    title: "Foundational C# with Microsoft Certificate",
+    company_name: "freeCodeCamp feat. Microsoft",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "April 2025",
+    points: [
+      "Developer Certification recognized by both freeCodeCamp and Microsoft.",
+      "Timed, multiple-choise exam passed.",
+      "Official Microsoft Learn paths completed (lectures and exercises).", 
+    ]
+  },
+  {
+    type: "certificate",
+    title: "Relational Database Certificate",
+    company_name: "freeCodeCamp",
+    icon: starbucks,
+    iconBg: "purple",
+    date: "May 2025",
+    points: [
+      "Approximately 300 hours of work.",
+      "Five projects built in GitPod.", 
+      "All automated test suites passed."
+    ]
+  },
 ];
 
 const filters = ["all", "react", "html+css+js", "games-serie", "colors-serie", "develhope"];
