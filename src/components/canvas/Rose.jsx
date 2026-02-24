@@ -7,7 +7,7 @@ import { isWebGLAvailable } from "../../utils/webgl";
 import { roseFallback } from "../../assets";
 
 const Rose = ({ isMobile }) => {
-  const rose = useGLTF("./rose/scene.gltf");
+  const rose = useGLTF("/portfolio/rose/scene.gltf");
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />

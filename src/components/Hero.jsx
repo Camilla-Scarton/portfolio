@@ -7,7 +7,7 @@ import { RoseCanvas } from "./canvas";
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
-      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row tems-start gap-5`}>
+      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div className="flex flex-col items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#755bb4]" />
           <div className="w-1 h-40 sm:h-80 bg-gradient-to-b from-purple-600 to-transparent" />
@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about" aria-label="Read more about me...">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-            <motion.dev
+            <motion.div
               animate={{
                 y: [0, 24, 0]
               }}

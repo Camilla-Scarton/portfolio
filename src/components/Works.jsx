@@ -149,14 +149,14 @@ const Works = () => {
           </form>
         </motion.div>
       </Tilt>
-      <div className="mt-10 flex flex-wrap gap-7 items-strech justify-center">
+      <div className="mt-10 flex flex-wrap gap-7 items-stretch justify-center">
         {filteredProjects.length === 0
           ? projects.map((project, i) => (
-              <ProjectCard key={`project-${i}`} index={i} {...project} />
-            ))
+            <ProjectCard key={`project-${i}`} index={i} {...project} />
+          ))
           : filteredProjects.map((project, i) => (
-              <ProjectCard key={`project-${i}`} index={i} {...project} />
-            ))}
+            <ProjectCard key={`project-${i}`} index={i} {...project} />
+          ))}
       </div>
     </>
   );
