@@ -40,8 +40,9 @@ jobs:
 
       # Step 3: Install project dependencies.
       # This runs 'npm ci' to ensure a consistent installation from package-lock.json.
+      # Added --legacy-peer-deps to handle React 19 peer dependency conflicts.
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --legacy-peer-deps
 
       # Step 4: Build the React project for production.
       # This typically creates a 'build' folder with optimized static assets.
