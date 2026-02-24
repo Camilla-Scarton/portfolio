@@ -35,12 +35,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18' # You can change this to your preferred Node.js version (e.g., '18', '22')
+          node-version: '22'
+          cache: 'npm'
 
       # Step 3: Install project dependencies.
-      # This runs 'npm install' or 'yarn install' based on your lock file.
+      # This runs 'npm ci' to ensure a consistent installation from package-lock.json.
       - name: Install dependencies
-        run: npm install # Or 'yarn install' if you use Yarn
+        run: npm ci
 
       # Step 4: Build the React project for production.
       # This typically creates a 'build' folder with optimized static assets.
