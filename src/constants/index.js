@@ -258,7 +258,7 @@ const experiences = [
     date: "November 2023",
     points: [
       "Approximately 300 hours of work.",
-      "Five projects built.", 
+      "Five projects built.",
       "All automated test suites passed."
     ]
   },
@@ -271,7 +271,7 @@ const experiences = [
     date: "December 2023",
     points: [
       "Approximately 300 hours of work.",
-      "Five projects built.", 
+      "Five projects built.",
       "All automated test suites passed."
     ]
   },
@@ -283,7 +283,7 @@ const experiences = [
     iconBg: "purple",
     date: "April 2024",
     points: [
-      "Certificate of attendance of the fourth edition of the Boolean Data Week.", 
+      "Certificate of attendance of the fourth edition of the Boolean Data Week.",
       "4 live lessons (8 hours of course) introducing Python/Pandas for data analysis and Tableau for data visualization.",
     ],
   },
@@ -296,7 +296,7 @@ const experiences = [
     date: "August 2024",
     points: [
       "Approximately 300 hours of work.",
-      "Five projects built.", 
+      "Five projects built.",
       "All automated test suites passed."
     ]
   },
@@ -310,7 +310,7 @@ const experiences = [
     points: [
       "Developer Certification recognized by both freeCodeCamp and Microsoft.",
       "Timed, multiple-choise exam passed.",
-      "Official Microsoft Learn paths completed (lectures and exercises).", 
+      "Official Microsoft Learn paths completed (lectures and exercises).",
     ]
   },
   {
@@ -322,13 +322,13 @@ const experiences = [
     date: "May 2025",
     points: [
       "Approximately 300 hours of work.",
-      "Five projects built in GitPod.", 
+      "Five projects built in GitPod.",
       "All automated test suites passed."
     ]
   },
 ];
 
-const filters = ["all", "react", "html+css+js", "games-serie", "colors-serie", "develhope"];
+const filters = ["all", "react", "angular", "html+css+js", "games-serie", "colors-serie", "develhope"];
 
 const allTags = [
   {
@@ -353,7 +353,7 @@ const allTags = [
   },
   {
     name: "typescript",
-    color: "text-red-500",
+    color: "text-red-600",
   },
   {
     name: "node.js",
@@ -375,36 +375,36 @@ const projects = [
     name: "Develhope exercises",
     description:
       "In the Develhope bootcamp, I've completed in six months 170+ exercises delving into HTML, CSS, SASS, JavaScript, React, TypeScript and Node.js.",
-      tags: [
-        {
-          name: "html",
-          color: "text-blue-500",
-        },
-        {
-          name: "css",
-          color: "text-yellow-300",
-        },
-        {
-          name: "scss",
-          color: "text-pink-400",
-        },
-        {
-          name: "javascript",
-          color: "text-green-400",
-        },
-        {
-          name: "react",
-          color: "text-purple-400",
-        },
-        {
-          name: "typescript",
-          color: "text-red-500",
-        },
-        {
-          name: "node.js",
-          color: "text-cyan-300",
-        },
-      ],
+    tags: [
+      {
+        name: "html",
+        color: "text-blue-500",
+      },
+      {
+        name: "css",
+        color: "text-yellow-300",
+      },
+      {
+        name: "scss",
+        color: "text-pink-400",
+      },
+      {
+        name: "javascript",
+        color: "text-green-400",
+      },
+      {
+        name: "react",
+        color: "text-purple-400",
+      },
+      {
+        name: "typescript",
+        color: "text-red-600",
+      },
+      {
+        name: "node.js",
+        color: "text-cyan-300",
+      },
+    ],
     image: tripguide,
     source_code_link: "https://github.com/Camilla-Scarton/Esercizi-Develhope",
     site_link: "",
@@ -414,20 +414,20 @@ const projects = [
     name: "Netflix clone",
     description:
       "Netflix landing page recreated in my first teamwork. Key features in the page were the two matching forms, the film cards and an accordions section.",
-      tags: [
-        {
-          name: "html",
-          color: "text-blue-500",
-        },
-        {
-          name: "css",
-          color: "text-yellow-300",
-        },
-        {
-          name: "javascript",
-          color: "text-green-400",
-        },
-      ],
+    tags: [
+      {
+        name: "html",
+        color: "text-blue-500",
+      },
+      {
+        name: "css",
+        color: "text-yellow-300",
+      },
+      {
+        name: "javascript",
+        color: "text-green-400",
+      },
+    ],
     image: tripguide,
     source_code_link: "",
     site_link: "",
@@ -437,28 +437,28 @@ const projects = [
     name: "Lego clone",
     description:
       "Lego site rebuilt with the landing page linked to the Hulkbuster product page. As result of a winter teamwork, some elements reflect the Christmas version.",
-      tags: [
-        {
-          name: "html",
-          color: "text-blue-500",
-        },
-        {
-          name: "css",
-          color: "text-yellow-300",
-        },
-        {
-          name: "javascript",
-          color: "text-green-400",
-        },
-        {
-          name: "scss",
-          color: "text-pink-400",
-        },
-        {
-          name: "bootstrap",
-          color: "text-orange-500",
-        },
-      ],
+    tags: [
+      {
+        name: "html",
+        color: "text-blue-500",
+      },
+      {
+        name: "css",
+        color: "text-yellow-300",
+      },
+      {
+        name: "javascript",
+        color: "text-green-400",
+      },
+      {
+        name: "scss",
+        color: "text-pink-400",
+      },
+      {
+        name: "bootstrap",
+        color: "text-orange-500",
+      },
+    ],
     image: tripguide,
     source_code_link: "https://github.com/Camilla-Scarton/Lego-Project-Develhope",
     site_link: "",
@@ -468,32 +468,32 @@ const projects = [
     name: "Evolve",
     description:
       "The final project at Develhope was designed and created by my team as a web app tailored for fitness lovers with an interactive 3D model, the Google Maps API and a login.",
-      tags: [
-        {
-          name: "html",
-          color: "text-blue-500",
-        },
-        {
-          name: "css",
-          color: "text-yellow-300",
-        },
-        {
-          name: "javascript",
-          color: "text-green-400",
-        },
-        {
-          name: "react",
-          color: "text-purple-400",
-        },
-        {
-          name: "tailwindcss",
-          color: "text-orange-500",
-        },
-        {
-          name: "pocketbase",
-          color: "text-cyan-300",
-        },
-      ],
+    tags: [
+      {
+        name: "html",
+        color: "text-blue-500",
+      },
+      {
+        name: "css",
+        color: "text-yellow-300",
+      },
+      {
+        name: "javascript",
+        color: "text-green-400",
+      },
+      {
+        name: "react",
+        color: "text-purple-400",
+      },
+      {
+        name: "tailwindcss",
+        color: "text-orange-500",
+      },
+      {
+        name: "pocketbase",
+        color: "text-cyan-300",
+      },
+    ],
     image: tripguide,
     source_code_link: "https://github.com/Camilla-Scarton/Evolve-Project-Develhope",
     site_link: "",
@@ -580,28 +580,28 @@ const projects = [
     name: "Portfolio",
     description:
       "Every cool project deserves both a repository and a card here. The source code for my first portfolio, this site, is available on my GitHub profile.",
-      tags: [
-        {
-          name: "html",
-          color: "text-blue-500",
-        },
-        {
-          name: "css",
-          color: "text-yellow-300",
-        },
-        {
-          name: "javascript",
-          color: "text-green-400",
-        },
-        {
-          name: "react",
-          color: "text-purple-400",
-        },
-        {
-          name: "tailwindcss",
-          color: "text-orange-500",
-        },
-      ],
+    tags: [
+      {
+        name: "html",
+        color: "text-blue-500",
+      },
+      {
+        name: "css",
+        color: "text-yellow-300",
+      },
+      {
+        name: "javascript",
+        color: "text-green-400",
+      },
+      {
+        name: "react",
+        color: "text-purple-400",
+      },
+      {
+        name: "tailwindcss",
+        color: "text-orange-500",
+      },
+    ],
     image: tripguide,
     source_code_link: "https://github.com/Camilla-Scarton/portfolio",
     site_link: "https://camilla-scarton.github.io/portfolio/",
@@ -611,24 +611,24 @@ const projects = [
     name: "My Pokédex",
     description:
       "My Pokédex loads a list of 15 consecutive pokémon. Users can sort them by type, see next and previous ones or choose one in the list to see more details below.",
-      tags: [
-        {
-          name: "html",
-          color: "text-blue-500",
-        },
-        {
-          name: "css",
-          color: "text-yellow-300",
-        },
-        {
-          name: "javascript",
-          color: "text-green-400",
-        },
-        {
-          name: "react",
-          color: "text-purple-400",
-        }
-      ],
+    tags: [
+      {
+        name: "html",
+        color: "text-blue-500",
+      },
+      {
+        name: "css",
+        color: "text-yellow-300",
+      },
+      {
+        name: "javascript",
+        color: "text-green-400",
+      },
+      {
+        name: "react",
+        color: "text-purple-400",
+      }
+    ],
     image: tripguide,
     source_code_link: "https://github.com/Camilla-Scarton/pokedex",
     site_link: "https://camilla-scarton.github.io/pokedex/",
@@ -638,24 +638,24 @@ const projects = [
     name: "Phonebook project",
     description:
       "RESTful phonebook made with Express.js and MongoDB. Users can login and modify their contacts. All CRUD methods are implemented. Authentication is based on JWT.",
-      tags: [
-        {
-          name: "javascript",
-          color: "text-green-400",
-        },
-        {
-          name: "node.js",
-          color: "text-cyan-300",
-        },
-        {
-          name: "express.js",
-          color: "text-orange-500",
-        },
-        {
-          name: "mongodb",
-          color: "text-lime-400",
-        },
-      ],
+    tags: [
+      {
+        name: "javascript",
+        color: "text-green-400",
+      },
+      {
+        name: "node.js",
+        color: "text-cyan-300",
+      },
+      {
+        name: "express.js",
+        color: "text-orange-500",
+      },
+      {
+        name: "mongodb",
+        color: "text-lime-400",
+      },
+    ],
     image: tripguide,
     source_code_link: "https://github.com/Camilla-Scarton/phonebook-node-project",
     site_link: "",
@@ -688,24 +688,24 @@ const projects = [
     name: "My Pokémon app",
     description:
       "Cool Pokémon theme project. The landing page offers some details and links for the inner sections. Key features are the infinite scrolling Pokémon list and the search form.",
-      tags: [
-        {
-          name: "html",
-          color: "text-blue-500",
-        },
-        {
-          name: "css",
-          color: "text-yellow-300",
-        },
-        {
-          name: "javascript",
-          color: "text-green-400",
-        },
-        {
-          name: "react",
-          color: "text-purple-400",
-        }
-      ],
+    tags: [
+      {
+        name: "html",
+        color: "text-blue-500",
+      },
+      {
+        name: "css",
+        color: "text-yellow-300",
+      },
+      {
+        name: "javascript",
+        color: "text-green-400",
+      },
+      {
+        name: "react",
+        color: "text-purple-400",
+      }
+    ],
     image: tripguide,
     source_code_link: "https://github.com/Camilla-Scarton/pokemon-app",
     site_link: "https://camilla-scarton.github.io/pokemon-app/",
@@ -733,6 +733,37 @@ const projects = [
     source_code_link: "https://github.com/Camilla-Scarton/rock-paper-scissors-lizard-spock",
     site_link: "https://camilla-scarton.github.io/rock-paper-scissors-lizard-spock/",
   },
+  {
+    info: ["ai", "antigravity", "angular", "personal", "ongoing"],
+    name: "Piece by Piece",
+    description:
+      'My puzzle collection displayed in a digital library with customizable layouts. Switch seamlessly between a minimalist grid and a dynamic waterfall display.',
+    tags: [
+      {
+        name: "html",
+        color: "text-blue-500",
+      },
+      {
+        name: "css",
+        color: "text-yellow-300",
+      },
+      {
+        name: "javascript",
+        color: "text-green-400",
+      },
+      {
+        name: "angular",
+        color: "text-red-500",
+      },
+      {
+        name: "tailwindcss",
+        color: "text-orange-500",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/Camilla-Scarton/puzzle-collection",
+    site_link: "https://camilla-scarton.github.io/puzzle-collection/",
+  }
 ];
 
 export { labels, experiences, projects, filters };

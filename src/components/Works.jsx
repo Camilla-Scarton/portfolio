@@ -35,22 +35,22 @@ const ProjectCard = ({
         className="h-full bg-tertiary flex flex-col justify-between p-5 rounded-2xl xs:w-[340px] border-2 border-tertiary hover:border-2 hover:border-secondary"
       >
         <div>
-          <div className="flex flex-wrap gap-4 cursor-default">
+          <div className="flex flex-row flex-wrap gap-x-4 cursor-default">
             {info.map((info, i) => (
-              <p key={i} className={`text-[18px] text-white`}>
+              <p key={i} className={`text-[17px] text-white`}>
                 #{info}
               </p>
             ))}
           </div>
           <div className="mt-4 cursor-default">
-            <h3 className="text-white font-bold text-[24px]">{name}</h3>
+            <h3 className="text-white font-bold text-[25px] text-center border-y border-secondary rounded-lg py-4">{name}</h3>
             <p className="text-white text-justify text-[18px] mt-4 pb-3">{description}</p>
           </div>
-          <div className="my-6 flex flex-wrap justify-center gap-4 cursor-default">
+          <div className="my-6 flex flex-wrap justify-center gap-x-2 gap-y-2 cursor-default">
             {tags.map((tag) => (
               <p
                 key={tag.name}
-                className={`text-[16px] border border-secondary rounded-lg px-2 py-0.5 ${tag.color}`}
+                className={`text-[16px] border border-secondary border-opacity-30 rounded-xl px-2 py-0.5 ${tag.color}`}
               >
                 {tag.name}
               </p>
@@ -85,6 +85,9 @@ const Works = () => {
         break;
       case "react":
         setFilteredProjects(projects.filter((el) => el.info.includes("react")));
+        break;
+      case "angular":
+        setFilteredProjects(projects.filter((el) => el.info.includes("angular")));
         break;
       case "html+css+js":
         setFilteredProjects(
